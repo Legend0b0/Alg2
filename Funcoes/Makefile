@@ -1,3 +1,3 @@
 all:
-	@gcc Media.c -o Media.exe
-	./Media.exe
+	@gcc Exponencial.c -o Exponencial.exe
+	./Exponencial.exe
