@@ -21,13 +21,15 @@ main()
 
 	while(1 == 1)
 		{
-		puts("Entre com um numero:");
+		//puts("Entre com um numero:");
 		scanf("%d", &n);
+
 		if(n == -1)
 			{
 			break;
 			}
-		printf("%d\n\n", ehPrimo(n));
+
+    printf("%d\n\n", ehPrimo(n));
 		}
 
 	return 0;

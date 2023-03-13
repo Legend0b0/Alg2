@@ -18,10 +18,12 @@ main()
 	{
 	int N;
 	
-	puts("Entre com um numero inteiro:");
+	//puts("Entre com um numero inteiro:");
 	scanf("%d", &N);
 
-	printf("Esse numero possui %d digitos\n", countdigitos(N));
+	//printf("Esse numero possi:);
+  printf("%d\n", countdigitos(N));
+  //printf("digitos\n");
 
 	return(0);
 	}

@@ -17,13 +17,11 @@ main()
 	{
 	int n;
 
-	puts("Entre com o enezimo numero:");
+	//puts("Entre com o enezimo numero:");
 	scanf("%d", &n);
-
-	for(int i = 1; i <= n; i++)
-		{ 
-		printf("Fibonati: %d\n", fibo(i));
-		}
+ 
+	//printf("Fibonati: );
+  printf("%d\n", fibo(n));
 
 	return 0;
 	}

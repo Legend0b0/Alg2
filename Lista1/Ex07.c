@@ -16,12 +16,12 @@ main()
 	{
 	int n;
 
-	puts("Digite quantos numeros ira usar:");
+	//puts("Digite quantos numeros ira usar:");
 	scanf("%d", &n);
 
 	int v[n];
 
-	printf("Entre com %d numeros:\n", n);
+	//printf("Entre com %d numeros:\n", n);
 	for(int i = 0; i < n; i++)
 		{
 		scanf("%d", &v[i]);

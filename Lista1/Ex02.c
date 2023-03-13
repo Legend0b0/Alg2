@@ -17,10 +17,11 @@ main()
 	{
 	int N;
 
-	puts("Entre com um numero 'N'");
+	//puts("Entre com um numero 'N'");
 	scanf("%d", &N);
 
-	printf("O fatorial de 'N' é: %d\n", fatorial(N));
+  //puts("O fatorial de 'N' é:");
+  printf("%d\n", fatorial(N));
 
 	return(0);
 	}

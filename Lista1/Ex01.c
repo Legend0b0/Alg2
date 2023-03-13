@@ -4,11 +4,11 @@ void par_impar(int a)
 	{
 	if((a % 2) == 0)
 		{
-		puts("Par");
+		puts("PAR");
 		}
 	else
 		{
-		puts("Impar");
+		puts("IMPAR");
 		}
 	}
 
@@ -19,7 +19,7 @@ main()
 
 	while(1 == 1)
 		{
-		puts("Entre com um numero");
+		//puts("Entre com um numero");
 		scanf("%d", &x);
 	
 		if(x < 0)
@@ -27,7 +27,7 @@ main()
 			break;
 			}
 
-			par_impar(x);
+		par_impar(x);
 		}
 
 	return(0);
