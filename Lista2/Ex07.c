@@ -52,10 +52,10 @@ main()
   struct __fracao fracao[2];
   struct __fracao result;
 
-  puts("Entre com o numerador e o denominador da fracao 1");
+  //puts("Entre com o numerador e o denominador da fracao 1");
   scanf("%d %d", &fracao[0].numerador, &fracao[0].denominador);
   
-  puts("Entre com o numerador e o denominador da fracao 2");
+ // puts("Entre com o numerador e o denominador da fracao 2");
   scanf("%d %d", &fracao[1].numerador, &fracao[1].denominador); 
 
   adicionar_fracao(fracao, &result);

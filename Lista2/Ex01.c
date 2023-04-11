@@ -13,25 +13,22 @@ main()
   int n;
   float media = 0;
   
-  puts("Quantos alunos tem que lancar a nota:");
+ // puts("Quantos alunos tem que lancar a nota:");
   scanf("%d", &n);
-  setbuf(stdin, NULL);
+  //setbuf(stdin, NULL);
 
   struct Aluno__ aluno[n];
 
   for(int i = 0; i < n; i++)
     {
-    printf("Digite o nome do Aluno %d:\n", i+1);
-    fgets(aluno[i].nome, 100, stdin);
-    setbuf(stdin, NULL);
+   // printf("Digite o nome do Aluno %d:\n", i+1);
+    scanf(" %[^\n]", &aluno[i].nome);
 
-    printf("Digite a matricula do Aluno %d:\n", i+1);
-    scanf("%d", &aluno[i].matricula);
-    setbuf(stdin, NULL);
+    //printf("Digite a matricula do Aluno %d:\n", i+1);
+    scanf(" %d", &aluno[i].matricula);
 
-    printf("Digite a nota do Aluno %d:\n", i+1);
-    scanf("%f", &aluno[i].nota);
-    setbuf(stdin, NULL);
+    //printf("Digite a nota do Aluno %d:\n", i+1);
+    scanf(" %f", &aluno[i].nota);
     }
 
   for(int i = 0; i < n; i++)
@@ -40,7 +37,7 @@ main()
     }
   media /= n;
 
-  printf("Media: %.2f\n", media);
+  printf("%.2f\n", media);
 
   return 0;
   }

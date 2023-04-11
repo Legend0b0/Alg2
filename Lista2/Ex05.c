@@ -13,7 +13,7 @@ void scan_livro (struct Livro livros[], int n)
   for(int i = 0; i < n; i++)
     {
     scanf(" %[^\n]", livros[i].titulo);
-    scanf(" %s", livros[i].autor);
+    scanf(" %[^\n]", livros[i].autor);
     scanf(" %d", &livros[i].ano);
     }
   }
@@ -22,8 +22,8 @@ void print_livro (struct Livro livros[], int n)
   {
   for(int i = 0; i < n; i++)
     {
-    printf("%s - ", livros[i].titulo);
-    printf("%s - ", livros[i].autor);
+    printf("%s", livros[i].titulo);
+    printf("%s", livros[i].autor);
     printf("%d\n", livros[i].ano);
     }
   }
@@ -51,7 +51,7 @@ main()
   {
   int n;
 
-  puts("Entre com 'n':");
+  //puts("Entre com 'n':");
   scanf("%d", &n);
 
   struct Livro livros[n];

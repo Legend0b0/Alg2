@@ -45,7 +45,7 @@ main()
   {
   struct __fracao fracao;
 
-  puts("Entre com o numerador e o denominador");
+ // puts("Entre com o numerador e o denominador");
   scanf("%d %d", &fracao.numerador, &fracao.denominador);
   
   simplificar_fracao(&fracao);

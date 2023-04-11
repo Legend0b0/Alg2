@@ -1,37 +1,38 @@
 #include <stdio.h>
 
-int negativos(float *vet, int n)
-  {
-  int count = 0;
-
-  for(int i = 0; i < n; i++)
-    {
-    if(vet[i] < 0)
-      {
-      count++;
-      }
-    }
-
-  return count;
-  }
-
 int
 main()
   {
   int n;
+  int count = 0;
 
-  puts("Digite o tamanho do vetor:");
+  puts("Entre com 'n'");
   scanf("%d", &n);
 
-  float vet[n];
+  int v[n];
 
-  puts("Preencha o vetor:");
+  puts("Entre com o vetor");
   for(int i = 0; i < n; i++)
     {
-    scanf("%f", &vet[i]);
+    scanf("%d", &v[i]);
     }
   
-  printf("Tem %d numeros negativos\n", negativos(vet, n));
+  for(int i = n-1; i >= 0; i--)
+    {
+    count += v[i];
+    }
+
+  FILE *file_saida;
+  file_saida = fopen("saida.txt", "w");
+
+  if(file_saida == NULL)
+    {
+    puts("Sem permissao para abrir o arquivo");
+    }
+
+  fprintf(file_saida, "%d", count);
+
+  fclose(file_saida);
 
   return 0;
   }

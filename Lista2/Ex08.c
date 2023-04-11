@@ -11,17 +11,17 @@ void ler_data(struct Data datas[], int *n)
   {
   for(int i = 0; i < *n; i++)
     {
-    printf("Entre com a data %d\n", i+1);
+    //printf("Entre com a data %d\n", i+1);
     scanf("%d %d %d", &datas[i].dia, &datas[i].mes, &datas[i].ano);
     }
   }
 
 void print_data(struct Data datas[], int *n)
   {
-  puts("Datas ordenadas:");
+  //puts("Datas ordenadas:");
   for(int i = 0; i < *n; i++)
     {
-    printf("%d/%d/%d\n", datas[i].dia, datas[i].mes, datas[i].ano);
+    printf("%.2d/%.2d/%.4d\n", datas[i].dia, datas[i].mes, datas[i].ano);
     }
   }
 
@@ -95,7 +95,7 @@ main()
   {
   int n;
 
-  puts("Entre com a quantidade de datas");
+  //puts("Entre com a quantidade de datas");
   scanf("%d", &n);
 
   struct Data datas[n];
