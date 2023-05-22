@@ -17,7 +17,7 @@ main()
 
   file_saida = fopen("saida.txt", "w");
 
-  puts("Entre com os cadastros");
+  //puts("Entre com os cadastros");
   for(int i = 0; i < 10; i++)
     {
     scanf(" %s", Aluno[i].nome);

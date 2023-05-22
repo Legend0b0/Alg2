@@ -6,7 +6,7 @@ main()
   char arq[50];
   FILE *file_entrada;
 
-  puts("Entre com o nome do arquivo");
+  //puts("Entre com o nome do arquivo");
   scanf(" %s", arq);
 
   file_entrada = fopen(arq, "r");

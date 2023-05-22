@@ -15,16 +15,17 @@ main()
   struct cadastro Aluno[10];
   FILE *file_entrada;
   
-  file_entrada = fopen("saida.txt", "r");
+  file_entrada = fopen("entrada.txt", "r");
 
   for(int i = 0; fscanf(file_entrada, " %s %f %f %f", Aluno[i].nome, &Aluno[i].nota1, &Aluno[i].nota2, &Aluno[i].media) != EOF; i++)
     {
     printf("%s\t%.2f\t%.2f\t%.2f\n", Aluno[i].nome, Aluno[i].nota1, Aluno[i].nota2, Aluno[i].media);
-    media += Aluno[i].media;
+    media += Aluno[i].nota1;
+    media += Aluno[i].nota2;
     }
-  media /= 10;
+  media /= 20.0;
 
-  printf("Media Geral: %.2f\n", media);
+  printf("%.2f\n", media);
 
   return(0);
   }

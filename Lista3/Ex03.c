@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int
 main()
@@ -10,31 +11,53 @@ main()
 
   if(file_saida == NULL)
     {
-    puts("Arquivo entrada.txt nao encontrado");
+    //puts("Arquivo entrada.txt nao encontrado");
     fclose(file_entrada);
     fclose(file_saida);
     return(0);
     }
 
-  int countL = 1, countC = 1;
-  char l, tmp;
+  int countL = 0, countC = 1, bol;
+  char str[100], tmp;
 
-  while(fscanf(file_entrada, "%c", &l) != EOF)
+  while(fgets(str, 100, file_entrada))
     {
-    if((l == ' ') && (countL == 1))
+    bol = 0;
+
+    if(str[0] != '\0')
       {
-      countC++;
+      for(int i = 0; str[i] != '\0'; i++)
+        {
+        if((str[i] != ' ') && (str[i] != '\n'))
+          {
+          bol = 1;
+          break;
+          }
+        }
       }
-    if(l == '\n')
+
+    if(bol == 1)
       {
       countL++;
-      }
-    tmp = l;
-    }
 
-  if(tmp == '\n')
-    {
-    countL--;
+      if(countL == 1)
+        {
+        for(int i = 0; str[i] != '\0'; i++)
+          {
+          if(str[i] == ' ')
+            {
+            countC++;
+            }
+
+          if(((str[i] == '\n') && (tmp == ' ')) || ((str[i] == ' ') && (tmp == ' ')))
+            {
+            countC--;
+            }
+
+          tmp = str[i];
+          }
+        }
+      }
     }
 
   fclose(file_entrada);
@@ -63,6 +86,9 @@ main()
       }
     fprintf(file_saida, "\n");
     }
+
+  fclose(file_entrada);
+  fclose(file_saida);
 
   return(0);
   } 

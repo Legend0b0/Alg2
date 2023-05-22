@@ -10,7 +10,7 @@ main()
 
   if(file_entrada == NULL)
     {
-    puts("Arquivo 'entrada.txt' nao existe");
+    //puts("Arquivo 'entrada.txt' nao existe");
     fclose(file_entrada);
     fclose(file_saida);
     return(0);
@@ -22,7 +22,7 @@ main()
     {
     for(int i = 0; s[i] != '\n'; i++)
       {
-      if((s[i] == 65) || (s[i] == 69) || (s[i] == 73) || (s[i] == 79) || (s[i] == 85) || (s[i] == 97) || (s[i] == 105) || (s[i] == 111) || (s[i] == 117))
+      if((s[i] == 65) || (s[i] == 69) || (s[i] == 73) || (s[i] == 79) || (s[i] == 85) || (s[i] == 97) || (s[i] == 101) || (s[i] == 105) || (s[i] == 111) || (s[i] == 117))
         {
         s[i] = 42;
         }

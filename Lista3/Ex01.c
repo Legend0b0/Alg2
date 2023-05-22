@@ -6,12 +6,12 @@ main()
   int n;
   int count = 0;
 
-  puts("Entre com 'n'");
+  //puts("Entre com 'n'");
   scanf("%d", &n);
 
   int v[n];
 
-  puts("Entre com o vetor");
+  //puts("Entre com o vetor");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);
@@ -27,7 +27,7 @@ main()
 
   if(file_saida == NULL)
     {
-    puts("Sem permissao para abrir o arquivo");
+    //puts("Sem permissao para abrir o arquivo");
     }
 
   fprintf(file_saida, "%d", count);
