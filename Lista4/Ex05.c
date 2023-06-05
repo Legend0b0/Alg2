@@ -45,28 +45,28 @@ main()
   int *v;
   int k;
 
-  puts("Entre com o tamanho do vetor:");
+  //puts("Entre com o tamanho do vetor:");
   scanf("%d", &n);
+
+  //puts("Entre com um indice 'k':");
+  scanf("%d", &k);
 
   v = malloc(n * sizeof(int));
 
-  puts("Preencha o vetor:");
+  //puts("Preencha o vetor:");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);
     }
 
-  puts("Entre com um indice 'k':");
-  scanf("%d", &k);
-
-  printf("O indice se encontra %d vezes\n", conta_ocorrencias(v, n, k));
+  //printf("O indice se encontra %d" vezes\n", conta_ocorrencias(v, n, k));
 
   int *v2;
   int n2 = n;
 
   v2 = remove_ocorrencias(v, &n2, k);
 
-  puts("O vetor sem os algarismos indices eh:");
+  //puts("O vetor sem os algarismos indices eh:");
   for(int i = 0; i < n2; i++)
     {
     printf("%d ", v2[i]);

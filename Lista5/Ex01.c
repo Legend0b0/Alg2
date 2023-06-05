@@ -36,22 +36,22 @@ main()
   int n;
   int (*pf)(int);
 
-  puts("Entre com o tamanho do vetor:");
+  //puts("Entre com o tamanho do vetor:");
   scanf("%d", &n);
   
   int v[n];
 
-  puts("Preencha o vetor");
+  //puts("Preencha o vetor");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);
     }
 
   pf = filtro_par;
-  printf("Media dos pares: %.2f\n", media(v, n, pf));
+  printf("%.2f\n", media(v, n, pf));
 
   pf = filtro_impar;
-  printf("Media dos impares: %.2f\n", media(v, n, pf));
+  printf("%.2f\n", media(v, n, pf));
 
   return(0);
   }

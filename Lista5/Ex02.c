@@ -28,27 +28,23 @@ main()
   int n, f;
   int (*pf[2])(int);
 
-  puts("Entre com o tamanho do vetor:");
+  //puts("Entre com o tamanho do vetor:");
   scanf("%d", &n);
 
   int v[n];
 
-  puts("Preencha o vetor:");
+  //puts("Preencha o vetor:");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);
     }
 
-  puts("Entre com '0' se deseja o filtro negativo, ou '1' se deseja o filtro positivo:");
-  scanf("%d", &f);
-  
   pf[0] = eh_negativo;
   pf[1] = eh_positivo;
 
-  printf("Indice: %d\n", busca_elemento(v, n, pf[f]));
-
-
-
+  printf("%d\n", busca_elemento(v, n, pf[0]));
+  
+  printf("%d\n", busca_elemento(v, n, pf[1]));
 
   return(0);
   }
