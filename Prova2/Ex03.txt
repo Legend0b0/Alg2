@@ -1,0 +1,11 @@
+a)
+	Biblioteca Estática: A biblioteca estática consiste no código da função desta biblioteca presente junto ao executável do programa, o que trás uma vantagem para o mesmo, a portabilidade deste executável, sem a necessidade de arquivos de terceiros, sendo mais pratica quando aplicada correntamente. Por outro lado, por este mesmo fator o executável se torna mais pesado, sendo inválido para programas cuja há a necessidade de um visualizador gráfico por exemplo, onde tais bibliotecas juntas presentes ao execultável, a tornariam extremamente pesadas e inviáveis de uso ao consumidor.
+
+	Biblioteca Dinámica: A biblioteca dinâmica consiste em utilizar esses elementos da função da biblioteca, fornecidos pelo sistema, de tal modo permitindo levesa ao execultável do programa que não irá carregar junto a ele essas bibliotecas, mas havendo a necessidade de ter atenção e ter presente essa biblioteca disponível no computador anteriormente ao uso do programa, alguns exemplos disto são programas gráficos ou bancos de dados que necessitam das bibliotecas disponibilizadas anteriormente pelo sistema.
+
+b)
+Ocorrem 4 etapas durante o processo de compilação em C, elas sendo:
+	Pré Processamento: Nesta etapa o "arquivo.c" é repaginado, fazendo as substituições dos Macros ao longo do código, onde com os "#define 'x' 'n'", neste processo o "x" será trocado por "n". Os comentarios do códigos são todos apagados, e os "#include <...>" terão suas funções expandidas para o código e será gerado ao final um "arquivo.i".
+	Compilação: Neste passo o codigo será traduzido para Assembling e será gerado ao final do processo o "arquivo.s" presente nesa linguagem.
+	Assembler: É o processo de tradução da Linguagem Assembly, para binario, onde será gerado o "arquivo.o". 
+	Linking: É o ultimo processo, onde é realizado a integração das bibliotecas ao codigo, e o Ligamento entre o codigo resultante do processo anterior e o Executavel gerado ao final desse processo, denominado de "arquivo.exe"/"arquivo.out", dependendo do Sistema Operacional.
