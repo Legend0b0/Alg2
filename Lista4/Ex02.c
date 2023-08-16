@@ -39,18 +39,18 @@ main()
   {
   int n1, n2;
 
-  puts("Entre com o tamanho de v1 e v2:");
+  //puts("Entre com o tamanho de v1 e v2:");
   scanf("%d %d", &n1, &n2);
 
   int v1[n1], v2[n2];
 
-  puts("Preencha o v1:");
+  //puts("Preencha o v1:");
   for(int i = 0; i < n1; i++)
     {
     scanf("%d", &v1[i]);
     }
   
-  puts("Preencha o v2:");
+  //puts("Preencha o v2:");
   for(int i = 0; i < n2; i++)
     {
     scanf("%d", &v2[i]);

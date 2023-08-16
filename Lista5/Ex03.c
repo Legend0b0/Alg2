@@ -24,12 +24,12 @@ main()
   int n;
   int (*pf)(int);
 
-  puts("Entre com o tamanho do vetor:");
+  //puts("Entre com o tamanho do vetor:");
   scanf("%d", &n);
 
   int v[n];
 
-  puts("Preencha o vetor:");
+  //puts("Preencha o vetor:");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);

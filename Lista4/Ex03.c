@@ -3,7 +3,7 @@
 
 void preenche_vetor(int *v, int n)
   {
-  puts("Preencha o vetor:");
+  //puts("Preencha o vetor:");
   for(int i = 0; i < n; i++)
     {
     scanf("%d", &v[i]);
@@ -16,7 +16,7 @@ main()
   int *v;
   int n;
 
-  puts("Entre com o tamanho do vetor:");
+  //puts("Entre com o tamanho do vetor:");
   scanf("%d", &n);
 
   v = malloc(n * sizeof(int));

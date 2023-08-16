@@ -31,14 +31,14 @@ main()
   char str[500];
   int (*pf)(char);
 
-  puts("Entre com uma string:");
+  //puts("Entre com uma string:");
   fgets(str, 500, stdin);
 
   pf = vogal;
-  printf("Vogais: %d\n", conta_caracteres(str, pf));
+  printf("%d\n", conta_caracteres(str, pf));
 
   pf = consoante;
-  printf("Consoantes: %d\n", conta_caracteres(str, pf));
+  printf("%d\n", conta_caracteres(str, pf));
 
   return(0);
   }
