@@ -28,7 +28,7 @@ main()
       {
       for(int i = 0; str[i] != '\0'; i++)
         {
-        if((str[i] != ' ') && (str[i] != '\n'))
+        if((str[i] != ' ') && (str[i] != '\n') && (str[i] != '\t'))
           {
           bol = 1;
           break;
@@ -44,12 +44,12 @@ main()
         {
         for(int i = 0; str[i] != '\0'; i++)
           {
-          if(str[i] == ' ')
+          if(((str[i] == ' ') || (str[i] == '\t')) && (i != 0))
             {
             countC++;
             }
 
-          if(((str[i] == '\n') && (tmp == ' ')) || ((str[i] == ' ') && (tmp == ' ')))
+          if(((str[i] == '\n') && ((tmp == ' ') || (tmp == '\t'))) || (((str[i] == ' ') || (str[i] == '\t')) && ((tmp == ' ') || (tmp == '\t'))))
             {
             countC--;
             }

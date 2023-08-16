@@ -10,12 +10,13 @@ main()
   puts("Entre com o tamanho do vetor");
   scanf("%d", &n);
 
-  v = malloc(n * sizeof(int));
+  v = (int *) malloc(n * sizeof(int));
 
   for(int i = 0; i < n; i++)
     {
     printf("%d ", v[i]);
     }
+  printf("\n");
 
   free(v);
   v = NULL;
